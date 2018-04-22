@@ -1,0 +1,129 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-31 09:07:08.1184707 UTC
+
+interface run-length-encoding-1.0.0.3-1yhuJkF6HTz7uP47uqEee0:RunLength 8002
+  interface hash: 122789c1aa09e0722609ecc23a0d606b
+  ABI hash: f14bee6bc9575497acdb31747ce132d3
+  export-list hash: 449effd4f0add5457be69e19b8911ba3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 1592c852681ff371afa65b2677f320e0
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  RunLength.decode
+  RunLength.encode
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Char c49b58282af11503cc838e1052cf6b83
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:GHC.Unicode 7b64ed854a326c2c5bb224f237ed4a0b
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:Text.Read 3cc85705eeac93ec93da7f5edfd7bc15
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+64dcc063667c9f6d7adac7a366c00062
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   RunLength.$trModule2
+                   RunLength.$trModule1) -}
+a589fa349d5d92a63a4f61cfd702b3ea
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "RunLength"#) -}
+8e8d866c5182f5fef07f87e79629e3ba
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "run-length-encoding-1.0.0.3-1yhuJkF6HTz7uP47uqEee0"#) -}
+bc0e1dacc859285da93affd70c948b77
+  decode :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [GHC.Types.Char]) ->
+                 case ds of wild {
+                   [] -> GHC.Types.[] @ GHC.Types.Char
+                   : ipv ipv1
+                   -> case RunLength.decode_go1 wild RunLength.decode1 of wild1 {
+                        [] -> case GHC.List.scanl2 ret_ty GHC.Base.String of {}
+                        : ds1 xs
+                        -> RunLength.decode_go xs (GHC.Types.[] @ GHC.Types.Char) } }) -}
+e412ddc589c4c97987f15f342d10ffab
+  decode1 :: [(GHC.Base.String, GHC.Types.Char)]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, GHC.Types.Char)
+                   RunLength.decode_seed
+                   (GHC.Types.[] @ (GHC.Base.String, GHC.Types.Char))) -}
+3dd3bcce13df8e4eecda49194be2149b
+  decode2 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# '0'#) -}
+6748fee0da1f6030daaeae570d893aed
+  decode_go ::
+    [(GHC.Base.String, GHC.Types.Char)]
+    -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+3fc417ccd470da117447adb90c8bbedc
+  decode_go1 ::
+    [GHC.Types.Char]
+    -> [(GHC.Base.String, GHC.Types.Char)]
+    -> [(GHC.Base.String, GHC.Types.Char)]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+72ff44b47c9d11e4ae2793ea0752f107
+  decode_seed :: ([GHC.Types.Char], GHC.Types.Char)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((GHC.Types.[] @ GHC.Types.Char, RunLength.decode2)) -}
+68424a308a3a15857b158701685afbf5
+  encode :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [GHC.Types.Char]) ->
+                 case ds of wild {
+                   [] -> GHC.Types.[] @ GHC.Types.Char
+                   : ipv ipv1
+                   -> case RunLength.encode_go1 wild RunLength.encode1 of wild1 {
+                        [] -> case GHC.List.init2 ret_ty GHC.Base.String of {}
+                        : x xs
+                        -> RunLength.encode_go
+                             (GHC.List.init1 @ (GHC.Types.Int, GHC.Types.Char) x xs) } }) -}
+9a18a6d5163da7dfdd22d3a4f68c254e
+  encode1 :: [(GHC.Types.Int, GHC.Types.Char)]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int, GHC.Types.Char)
+                   RunLength.encode2
+                   (GHC.Types.[] @ (GHC.Types.Int, GHC.Types.Char))) -}
+b93c2d99cca969ff21f329b3974fd42f
+  encode2 :: (GHC.Types.Int, GHC.Types.Char)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((RunLength.encode3, RunLength.decode2)) -}
+8405dfaf5b290f54b857f02ddf7af30e
+  encode3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+04753a4edfa6562a0bd712b2f9d74e2c
+  encode_go :: [(GHC.Types.Int, GHC.Types.Char)] -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+f15642e31b5548ec5f5b9df306321dbe
+  encode_go1 ::
+    [GHC.Types.Char]
+    -> [(GHC.Types.Int, GHC.Types.Char)]
+    -> [(GHC.Types.Int, GHC.Types.Char)]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

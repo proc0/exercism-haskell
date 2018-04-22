@@ -1,0 +1,111 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-10 19:09:01.7983574 UTC
+
+interface rna-transcription-1.0.1.4-mBDcn2bbpXJQlsTcF9Nto:DNA 8002
+  interface hash: 3581e6d0a5e14c5ff9bb13b4d193f724
+  ABI hash: d627f6427a1a90ff8baa95d7c6b2931f
+  export-list hash: f54f0cc4d6d24c7cdea9090b59b06e8b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 1592c852681ff371afa65b2677f320e0
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  DNA.toRNA
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.List 7349774f430841349c90dfd1144aea97
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+0fb5db5358afbc01897824efd9ccafd6
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module DNA.$trModule2 DNA.$trModule1) -}
+92934361c36ec7958810c38875141169
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "DNA"#) -}
+e8eacd5c31d228af6c2e96efc601bea1
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "rna-transcription-1.0.1.4-mBDcn2bbpXJQlsTcF9Nto"#) -}
+6ebe47c782dc9eb8cdf08ee6a295cecd
+  toRNA :: GHC.Base.String -> GHC.Base.Maybe GHC.Base.String
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (x :: [GHC.Types.Char]) ->
+                 case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        (Data.OldList.intersectBy
+                           @ GHC.Types.Char
+                           GHC.Classes.eqChar
+                           x
+                           DNA.toRNA6)
+                        0# of ww2 { DEFAULT ->
+                 case GHC.List.$wlenAcc @ GHC.Types.Char x 0# of ww1 { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# ww2 ww1) of wild {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.># ww1 0#) of wild1 {
+                        GHC.Types.False -> GHC.Base.Nothing @ [GHC.Types.Char]
+                        GHC.Types.True
+                        -> GHC.Base.Just
+                             @ [GHC.Types.Char]
+                             (GHC.Base.map
+                                @ GHC.Types.Char
+                                @ GHC.Types.Char
+                                DNA.toRNA_transcribe
+                                x) }
+                   GHC.Types.True -> GHC.Base.Nothing @ [GHC.Types.Char] } } }) -}
+a84c89f6b887f5541cd74e6881216115
+  toRNA1 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'A'#) -}
+790905ea0a563d52c9990416cd5aa361
+  toRNA2 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'C'#) -}
+f6c11fecefebf6d4550599769d3532be
+  toRNA3 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'G'#) -}
+c04ba9f04515adaa0c17a7220b89f2c5
+  toRNA4 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'U'#) -}
+2b6e85729dbb52d0787008a6a85078df
+  toRNA5 :: GHC.Types.Char
+  {- Strictness: x -}
+885f29f4822837dc622c4ca5b13aec02
+  toRNA6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "GCTA"#) -}
+4b0091a3c184fa50b41dbb2233246953
+  toRNA_transcribe :: GHC.Types.Char -> GHC.Types.Char
+  {- Arity: 1, Strictness: <S(S),1*U(1*U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (dna :: GHC.Types.Char) ->
+                 case dna of wild { GHC.Types.C# ds ->
+                 case ds of ds1 {
+                   DEFAULT -> DNA.toRNA5
+                   'A'# -> DNA.toRNA4
+                   'C'# -> DNA.toRNA3
+                   'G'# -> DNA.toRNA2
+                   'T'# -> DNA.toRNA1 } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
